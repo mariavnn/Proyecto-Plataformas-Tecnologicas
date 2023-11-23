@@ -45,14 +45,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Garamond" size="24" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Gesti&#xf3;n de Espacio de Intercambio"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="180" width="360" height="-1"/>
+              <AbsoluteConstraints x="10" y="180" width="460" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -76,9 +73,6 @@
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Semilight" size="15" style="1"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Utilizado para transferir procesos completos (intercambio) o p&#xe1;ginas (paginaci&#xf3;n) desde la RAM a un almacenamiento secundario cuando la capacidad de la RAM no es suficiente para todos los procesos. El sistema operativo se encarga de la gesti&#xf3;n del espacio de intercambio. El almacenamiento secundario es m&#xe1;s lento que la RAM, por lo que optimizar el rendimiento se vuelve crucial. A menudo, es posible tener varios espacios de intercambio, lo que reduce la carga de E/S en dispositivos individuales. Es preferible usar dispositivos dedicados, que pueden estar en particiones en crudo o archivos dentro de un sistema de archivos para facilitar su a&#xf1;adido."/>
               </Properties>

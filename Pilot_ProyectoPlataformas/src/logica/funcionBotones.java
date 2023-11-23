@@ -41,43 +41,55 @@ public class funcionBotones {
         }
         cambiarVisibilidad();
     }
-    public void agregarFuncionalidadMenuDesplegable(JPopupMenu menuDesplegable, boolean translate) {
+   public void agregarFuncionalidadMenuDesplegable(JPopupMenu menuDesplegable, boolean translate) {
     Locale currentLocale = translate ? new Locale("en", "US") : new Locale("es", "ES");
     ResourceBundle texto = ResourceBundle.getBundle("idiomas.texto", currentLocale);
 
-    String[] menuKeys = {"menu_contenido", "menu_objetivos", "menu_tema", "menu_quiz_parte_1", "menu_quiz_parte_2"};
+    String[] menuKeys = {"menu_principal", "menu_contenido", "menu_objetivos", "menu_tema", "menu_quiz_parte_1", "menu_quiz_parte_2"};
     
     for (int i = 0; i < frames.length; i++) {
         JInternalFrame frame = frames[i];
+        final int index = i; 
         JMenuItem menuItem = new JMenuItem();
 
-        if (i == 11) {
-            String menuText = texto.getString("menu_quiz_parte_1");
-            menuItem.setText(menuText);
-        } else if (i == 12) {
-            String menuText = texto.getString("menu_quiz_parte_2");
-            menuItem.setText(menuText);
-        } else {
-            String menuText = (i < menuKeys.length) ? texto.getString(menuKeys[i]) : texto.getString("menu_tema") + " " + (i - 1);
-            menuItem.setText(menuText);
+        String menuText;
+        switch (i) {
+            case 0:
+                menuText = texto.getString("menu_principal");
+                break;
+            case 1:
+                menuText = texto.getString("menu_contenido");
+                break;
+            case 2:
+                menuText = texto.getString("menu_objetivos");
+                break;
+            case 11:
+                menuText = texto.getString("menu_quiz_parte_1");
+                break;
+            case 12:
+                menuText = texto.getString("menu_quiz_parte_2");
+                break;
+            default:
+                if (i >= 3 && i <= 10) {
+                    menuText = texto.getString("menu_tema") + " " + (i - 2);
+                } else {
+                    menuText = (i < menuKeys.length) ? texto.getString(menuKeys[i]) : texto.getString("menu_tema") + " " + (i - 2);
+                }
+                break;
         }
 
-        menuItem.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                for (int j = 0; j < frames.length; j++) {
-                    if (frames[j] == frame) {
-                        currentFrameIndex = j;
-                        cambiarVisibilidad();
-                        break;
-                    }
-                }
-            }
+        menuItem.setText(menuText);
+
+        menuItem.addActionListener(e -> {
+            currentFrameIndex = index;
+            cambiarVisibilidad();
         });
 
         menuDesplegable.add(menuItem);
     }
 }
+
+    
 
     public void cambiarVisibilidad() {
         for (int i = 0; i < frames.length; i++) {

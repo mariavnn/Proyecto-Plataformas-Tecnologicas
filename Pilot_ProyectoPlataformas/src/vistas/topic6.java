@@ -42,14 +42,12 @@ public class topic6 extends javax.swing.JInternalFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tituloTopic6.setFont(new java.awt.Font("Garamond", 1, 24)); // NOI18N
-        tituloTopic6.setForeground(new java.awt.Color(0, 0, 0));
         tituloTopic6.setText("Gestión de Espacio de Intercambio");
-        jPanel1.add(tituloTopic6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 360, -1));
+        jPanel1.add(tituloTopic6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 460, -1));
 
         txtTopic6.setEditable(false);
         txtTopic6.setBackground(new java.awt.Color(255, 255, 255));
         txtTopic6.setFont(new java.awt.Font("Segoe UI Semilight", 1, 15)); // NOI18N
-        txtTopic6.setForeground(new java.awt.Color(0, 0, 0));
         txtTopic6.setText("Utilizado para transferir procesos completos (intercambio) o páginas (paginación) desde la RAM a un almacenamiento secundario cuando la capacidad de la RAM no es suficiente para todos los procesos. El sistema operativo se encarga de la gestión del espacio de intercambio. El almacenamiento secundario es más lento que la RAM, por lo que optimizar el rendimiento se vuelve crucial. A menudo, es posible tener varios espacios de intercambio, lo que reduce la carga de E/S en dispositivos individuales. Es preferible usar dispositivos dedicados, que pueden estar en particiones en crudo o archivos dentro de un sistema de archivos para facilitar su añadido.");
         jScrollPane3.setViewportView(txtTopic6);
 
