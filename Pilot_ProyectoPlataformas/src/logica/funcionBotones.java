@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPopupMenu;
 
 /**
@@ -14,7 +15,6 @@ import javax.swing.JPopupMenu;
  * @author maria
  */
 public class funcionBotones {
-
     private int currentFrameIndex = 0;
     private final JInternalFrame[] frames;
 
@@ -24,6 +24,10 @@ public class funcionBotones {
     }
 
     public void mostrarSiguienteFrame() {
+    if (currentFrameIndex == 11) {
+        // Mostrar una alerta indicando que se deben usar los botones del cuestionario
+        JOptionPane.showMessageDialog(null, "Usar los botones del cuestionario");
+    } else {
         frames[currentFrameIndex].setVisible(false);
         currentFrameIndex = (currentFrameIndex + 1) % frames.length;
         if (currentFrameIndex != 0) {
@@ -33,7 +37,8 @@ public class funcionBotones {
             cambiarVisibilidad();
         }
     }
-
+}
+    
     public void mostrarFrameAnterior() {
         frames[currentFrameIndex].setVisible(false);
         if (currentFrameIndex != 0) {
@@ -41,6 +46,7 @@ public class funcionBotones {
         }
         cambiarVisibilidad();
     }
+
    public void agregarFuncionalidadMenuDesplegable(JPopupMenu menuDesplegable, boolean translate) {
     Locale currentLocale = translate ? new Locale("en", "US") : new Locale("es", "ES");
     ResourceBundle texto = ResourceBundle.getBundle("idiomas.texto", currentLocale);
@@ -97,13 +103,5 @@ public class funcionBotones {
         }
     }
     
-    public static void botonContinuar2(JInternalFrame pantalla) { //continuar pantallas
-        pantalla.setDefaultCloseOperation(JInternalFrame.DISPOSE_ON_CLOSE);
-        pantalla.setVisible(true);
-    }
-    
-    public static void botonContinuar1(JFrame frame) { //continuar pantallas
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.setVisible(true);
-    }
+
 }

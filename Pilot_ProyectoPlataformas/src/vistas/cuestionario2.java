@@ -43,19 +43,16 @@ public class cuestionario2 extends javax.swing.JInternalFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("¿Cuál es el propósito principal del algoritmo SCAN en la programación del disco?");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
         jRadioButton1.setBackground(new java.awt.Color(204, 204, 204));
         jRadioButton1.setFont(new java.awt.Font("Segoe UI Symbol", 0, 12)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Minimizar los tiempos de espera.");
         jPanel2.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
 
         jRadioButton2.setBackground(new java.awt.Color(204, 204, 204));
         jRadioButton2.setFont(new java.awt.Font("Segoe UI Symbol", 0, 12)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton2.setText("Mover el cabezal del disco de un extremo a otro.");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,7 +63,6 @@ public class cuestionario2 extends javax.swing.JInternalFrame {
 
         jRadioButton3.setBackground(new java.awt.Color(204, 204, 204));
         jRadioButton3.setFont(new java.awt.Font("Segoe UI Symbol", 0, 12)); // NOI18N
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton3.setText("Mover el cabezal del disco de un extremo a otro.");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,13 +72,11 @@ public class cuestionario2 extends javax.swing.JInternalFrame {
         jPanel2.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("¿En qué se destaca la memoria no volátil (NVM) en comparación con los HDDs?");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, -1, -1));
 
         jRadioButton4.setBackground(new java.awt.Color(204, 204, 204));
         jRadioButton4.setFont(new java.awt.Font("Segoe UI Symbol", 0, 12)); // NOI18N
-        jRadioButton4.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton4.setText("Rendimiento en tareas secuenciales.\n");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,7 +87,6 @@ public class cuestionario2 extends javax.swing.JInternalFrame {
 
         jRadioButton5.setBackground(new java.awt.Color(204, 204, 204));
         jRadioButton5.setFont(new java.awt.Font("Segoe UI Symbol", 0, 12)); // NOI18N
-        jRadioButton5.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton5.setText("Producción de Operaciones de Entrada/Salida por Segundo (IOPS).\n");
         jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,30 +97,25 @@ public class cuestionario2 extends javax.swing.JInternalFrame {
 
         jRadioButton6.setBackground(new java.awt.Color(204, 204, 204));
         jRadioButton6.setFont(new java.awt.Font("Segoe UI Symbol", 0, 12)); // NOI18N
-        jRadioButton6.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton6.setText("Eficiencia en la gestión de colas de disco.\n");
         jPanel2.add(jRadioButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("¿Cuál es el propósito principal de utilizar espacios de intercambio en un sistema?");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, -1));
 
         jRadioButton7.setBackground(new java.awt.Color(204, 204, 204));
         jRadioButton7.setFont(new java.awt.Font("Segoe UI Symbol", 0, 12)); // NOI18N
-        jRadioButton7.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton7.setText("Optimizar el rendimiento de la RAM.\n");
         jPanel2.add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
 
         jRadioButton8.setBackground(new java.awt.Color(204, 204, 204));
         jRadioButton8.setFont(new java.awt.Font("Segoe UI Symbol", 0, 12)); // NOI18N
-        jRadioButton8.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton8.setText("Transferir procesos o páginas cuando la RAM es insuficiente.");
         jPanel2.add(jRadioButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, -1, -1));
 
         jRadioButton9.setBackground(new java.awt.Color(204, 204, 204));
         jRadioButton9.setFont(new java.awt.Font("Segoe UI Symbol", 0, 12)); // NOI18N
-        jRadioButton9.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton9.setText("Mantener varios sistemas operativos en una máquina.\n");
         jRadioButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
